@@ -1,0 +1,54 @@
+{{>header}}
+
+
+<div class="container">
+    <div class="col-1">
+    </div>
+     <div class="col-10">
+<form form action="/crearCursoLogica" method="post">
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="number" class="form-control" id="id" name="id" placeholder="Ingrese ID del curso" required >
+  </div>
+  <div class="form-group">
+    <label for="nombre" >Nombre</label>
+    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese un nombre para el curso" required>
+  </div>
+  <div class="form-group ">
+       <label for="sel" >Modalidad</label>
+    <select class="custom-select" id="sel" name="modalidad" required>
+         <option selected disabled >Seleccione una modalidad</option>
+         <option value="Presencial">Presencial</option>
+            <option value="Virtual">Virtual</option>
+</select>
+   
+  </div>
+
+ <div class="form-group">
+    <label for="valor" >Valor</label>
+    <input type="number" class="form-control" id="valor" name="valor" placeholder="Ingrese un valor para el curso" required>
+  </div>
+
+   <div class="form-group">
+    <label for="intensidad" >Intensidad horaria</label>
+    <input type="number" name="intensidad" class="form-control" id="intensidad" placeholder="Ingrese la intesidad horaria del curso" required>
+  </div>
+
+  <div class="form-group">
+    <label for="des" >Descripcion del curso</label>
+    <textarea class="form-control" id="des"  name="descripcion" placeholder="Descripcion del curso" required ></textarea>
+  </div>
+   
+  <button type="submit" class="btn btn-primary">Crear</button>
+</form>
+</div>
+<div class="col-1">
+    </div>
+</div>
+
+
+
+{{>footer}}
+
+
+

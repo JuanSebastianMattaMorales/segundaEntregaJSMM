@@ -1,0 +1,47 @@
+{{>header}}
+
+
+
+<div class="container">
+    <div class="col-1">
+    </div>
+     <div class="col-10">
+<form form action="/inscripcionLogica" method="post">
+  <div class="form-group">
+    <label for="documento">Documento</label>
+    <input type="number" class="form-control" id="documento" name="documento" placeholder="Ingrese numero de documento" required >
+  </div>
+  <div class="form-group">
+    <label for="nombre" >Nombre</label>
+    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese el nombre del aspirante" required>
+  </div>
+
+ <div class="form-group">
+    <label for="telefono" >Telefono</label>
+    <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Ingrese un numero de telefono" required>
+  </div>
+
+   <div class="form-group">
+    <label for="correo" >Correo electronico</label>
+    <input type="email" name="correo" class="form-control" id="correo" placeholder="Ingrese un correo electronico" required>
+  </div>
+
+
+     {{{cursoDisponible}}}
+      
+
+
+   
+  <button type="submit" class="btn btn-primary">Crear</button>
+</form>
+</div>
+<div class="col-1">
+    </div>
+</div>
+
+
+
+{{>footer}}
+
+
+
